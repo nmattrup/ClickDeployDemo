@@ -1,9 +1,12 @@
+/**
+ * JUST SOME CODE HERE TO SEE HOW THIS COULD WORK...
+ */
 public class AccountHandler {
 	public static Account insertNewAccount(String accountName){
 		try {
 			Account newAccount = new Account();
 			newAccount.Name = accountName;
-			
+
 			insert newAccount;
 			return newAccount;
 
