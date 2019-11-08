@@ -1,0 +1,11 @@
+<aura:component >   
+    <aura:attribute name="result" type="String" />
+    <aura:attribute name="accId" type="String" />
+    <span aura:id="buttons">
+        <c:ApprovalButton type="approve" accId="{!v.accId}" 
+                          ApprovalDecisionEvent="{!c.hideButtons}" />
+        <c:ApprovalButton type="reject" accId="{!v.accId}" 
+                          ApprovalDecisionEvent="{!c.hideButtons}" />    
+    </span>
+    {!v.result}
+</aura:component>

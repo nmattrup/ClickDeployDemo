@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" 
+            description="Approval button (approve or reject) has been pressed">
+	<aura:attribute name="result" type="string" />
+</aura:event>
