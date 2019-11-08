@@ -1,0 +1,11 @@
+<apex:page showHeader="true" sidebar="true" standardController="Contact">
+	<apex:sectionHeader title="MyHeaderTitle" subtitle="MyHeaderSubTitle" />
+	<apex:pageBlock title="MyPageBlockTitle">
+		<apex:pageBlockSection title="MyPageBlockSectionTitle">
+			{!Contact.FirstName} <br/>
+			{!Contact.LastName} <br/>
+			{!Contact.Owner.Email}
+			<!-- Use this URL to see the information using an existing Contact Record - https://nmattrup-dev-ed--c.eu5.visual.force.com/apex/ContactView?core.apexpages.request.devconsole=1&id=0032400000DB6ma -->
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:page>

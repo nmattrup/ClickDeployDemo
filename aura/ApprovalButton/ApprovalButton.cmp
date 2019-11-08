@@ -1,0 +1,8 @@
+<aura:component controller="ApprovalButtonApexController">
+   <aura:attribute name="type" type="String" />
+   <aura:attribute name="accId" type="String" />
+   <aura:attribute name="result" type="String" />
+   <aura:registerEvent name="ApprovalDecisionEvent" type="c:ApprovalDecisionEvent" /> 
+   <ui:button label="{!v.type}" press="{!c.doButton}" class="{!v.type}" />
+   {!v.result}
+</aura:component>

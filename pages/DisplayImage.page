@@ -1,0 +1,13 @@
+<apex:page showHeader="false" sidebar="true">
+	<apex:image id="SalesforceImage" value="https://developer.salesforce.com/files/salesforce-developer-network-logo.png" width="200" height="180"/>
+
+<!-- 	<apex:sectionHeader title="MyHeaderTitle" subtitle="MyHeaderSubTitle" />
+	<apex:pageBlock title="MyPageBlockTitle">
+		<apex:pageBlockButtons location="top">
+			
+		</apex:pageBlockButtons>
+		<apex:pageBlockSection title="MyPageBlockSectionTitle">
+
+		</apex:pageBlockSection>
+	</apex:pageBlock> -->
+</apex:page>

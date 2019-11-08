@@ -1,0 +1,28 @@
+<aura:component controller="AccountButtonAppApexController" implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <aura:attribute name="accounts" type="Account[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />   
+    
+    <ltng:require styles="/resource/SLDS0121/assets/styles/salesforce-lightning-design-system.css" /> 
+    
+    <div class="slds-tabs--default">
+        <ul class="slds-tabs--default__nav" role="tablist">
+            <li class="slds-tabs__item slds-text-heading--label slds-active" title="Account Approval" role="presentation"><a href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1">Account Approval</a></li>
+        </ul>
+        <div id="tab-default-1" class="slds-tabs__content slds-show" role="tabpanel">
+            <br/>
+            <aura:iteration items="{!v.accounts}" var="a">
+                <div class="slds-card">
+                    <div class="slds-card__body">
+                        <ul>
+                            <li class="slds-tile slds-hint-parent">
+                                <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+                                    <p class="slds-tile__title slds-truncate"><a href="#">{!a.Name}</a></p>
+                                    <c:ApprovalButtonSet accId="{!a.Id}" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div></div>
+            </aura:iteration>  </div>
+    </div>
+    
+</aura:component>
