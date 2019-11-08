@@ -1,4 +1,4 @@
-public with sharing class AccountActivityHandler {
+public with sharing class AccountActivityHandler { //Just adding something to see what happens
 	public AccountActivityHandler() {}
 
 	public static void createAddressEvent(list<Account> newAccounts, Map<Id, Account> oldAccounts){
